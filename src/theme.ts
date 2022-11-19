@@ -9,13 +9,13 @@ export const getDesignTokens = (mode: PaletteMode) => ({
             main: '#00677f', // Primary
             light: '#4895ae',
             dark: '#003c53',
-            contrastText: '#ffffff',
+            contrastText: '#ffffff', // On Primary
           },
           secondary: {
             main: '#4c626a', // Secondary
             light: '#798f98',
             dark: '#23383f',
-            contrastText: '#ffffff',
+            contrastText: '#ffffff', // On Secondary
           },
         }
       : {
@@ -23,13 +23,13 @@ export const getDesignTokens = (mode: PaletteMode) => ({
             main: '#4fd6fe', // Primary
             light: '#8cffff',
             dark: '#00a4cb',
-            contrastText: '#000000',
+            contrastText: '#003543', // On Primary
           },
           secondary: {
             main: '#b3cad4', // Secondary
             light: '#e5fdff',
             dark: '#8399a3',
-            contrastText: '#000000',
+            contrastText: '#1e333b', // On Secondary
           },
           text: {
             primary: '#E1E3E4', // On Background
