@@ -1,5 +1,5 @@
-name: feature request
-description: Suggest an idea for this project
+name: 機能リクエスト
+description: このプロジェクトにアイデアを提案する。
 title: '[Feature]: '
 labels: ['enhancement', 'triage']
 body:
@@ -15,6 +15,7 @@ body:
     attributes:
       label: Todo
       description: リクエストの内容を実現するために必要なタスクを説明してください。
+      value: - [ ] 
     validations:
       required: false
   - type: textarea
