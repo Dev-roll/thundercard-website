@@ -15,7 +15,7 @@ body:
     attributes:
       label: Todo
       description: リクエストの内容を実現するために必要なタスクを説明してください。
-      value: - [ ] 
+      value: '- [ ] '
     validations:
       required: false
   - type: textarea
