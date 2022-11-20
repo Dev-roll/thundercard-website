@@ -11,7 +11,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: description
+    id: expected-behavior
     attributes:
       label: 期待する動作
       description: どのような動作を期待していたのか説明してください。
