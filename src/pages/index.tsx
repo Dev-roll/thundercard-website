@@ -1,5 +1,6 @@
 import { Button } from '@mui/material'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Button variant="contained">Contained</Button>
+      <Link href="/privacy-policy">プライバシーポリシー</Link>
+      <Link href="/terms-of-use">利用規約</Link>
     </div>
   )
 }
