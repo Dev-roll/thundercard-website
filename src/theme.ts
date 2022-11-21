@@ -1,6 +1,9 @@
 import { PaletteMode } from '@mui/material'
 
 export const getDesignTokens = (mode: PaletteMode) => ({
+  typography: {
+    fontFamily: ['Zen Kaku Gothic New', 'sans-serif'].join(','),
+  },
   palette: {
     mode,
     ...(mode === 'light'
