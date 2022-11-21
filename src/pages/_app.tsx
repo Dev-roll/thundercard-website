@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
 import { useMemo } from 'react'
 import { getDesignTokens } from '@/src/theme'
+import Footer from '@src/components/Footer'
 
 const App = ({ Component, pageProps }: AppProps) => {
   // TODO: #8 light/dark モードを変更可能にする
@@ -14,6 +15,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </>
   )
