@@ -1,13 +1,12 @@
 import { Button, Container } from '@mui/material'
-import Head from 'next/head'
 import Link from 'next/link'
+import { config } from '@site.config'
+import SeoHead from '@src/components/SeoHead'
 
 const Home = () => {
   return (
     <>
-      <Head>
-        <title>Thundercard</title>
-      </Head>
+      <SeoHead title={config.siteMeta.title} removeSiteNameFromTitle path="/" />
       <Container maxWidth="md" sx={{ my: 4 }}>
         <Button variant="contained">Contained</Button>
         <Link href="/privacy-policy">プライバシーポリシー</Link>
