@@ -1,4 +1,5 @@
 import { Container } from '@mui/material'
+import Link from '@src/components/Link'
 import SeoHead from '@src/components/SeoHead'
 
 <>
@@ -18,8 +19,20 @@ Devroll は Thundercard アプリを無料アプリとして構築しました�
 本アプリは、お客様を特定するために使用される情報を収集する可能性のある第三者のサービスを使用しています。
 アプリが利用する第三者サービスプロバイダのプライバシーポリシーへのリンク
 
-- [Google Play サービス](https://www.google.com/policies/privacy/)
-- [Google Analytics for Firebase](https://firebase.google.com/policies/analytics)
+- <Link
+    href="https://www.google.com/policies/privacy"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Google Play サービス
+  </Link>
+- <Link
+    href="https://firebase.google.com/policies/analytics"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Google Analytics for Firebase
+  </Link>
 
 ## ログデータ
 
@@ -59,8 +72,8 @@ Cookie とは、一般的に匿名の一意の識別子として使用される�
 
 ## お問い合わせ
 
-当社のプライバシーポリシーに関するご質問やご提案がございましたら、ご遠慮なく devroll.dev@gmail.com までご連絡ください。
-このプライバシーポリシーのページは、[privacypolicytemplate.net](https://privacypolicytemplate.net) で作成され、[App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/) で修正/生成されたものです。
+当社のプライバシーポリシーに関するご質問やご提案がございましたら、ご遠慮なく <Link href="mailto:devroll.dev@gmail.com">devroll.dev@gmail.com</Link> までご連絡ください。
+このプライバシーポリシーのページは、<Link href="https://privacypolicytemplate.net" target="_blank" rel="noreferrer">privacypolicytemplate.net</Link> で作成され、<Link href="https://app-privacy-policy-generator.nisrulz.com" target="_blank" rel="noreferrer">App Privacy Policy Generator</Link> で修正/生成されたものです。
 
   </Container>
 </>
