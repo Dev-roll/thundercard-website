@@ -10,7 +10,13 @@ const Home = () => {
       <Container maxWidth="md" sx={{ my: 4 }}>
         <Link href="/privacy-policy">プライバシーポリシー</Link>
         <Link href="/terms-of-use">利用規約</Link>
-        <Link href="https://github.com/Dev-roll/thundercard">GitHub</Link>
+        <Link
+          href="https://github.com/Dev-roll/thundercard"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </Link>
       </Container>
     </>
   )
