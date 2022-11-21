@@ -16,7 +16,7 @@
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "all",
+        "trailingComma": "es5",
         "endOfLine": "lf",
         "semi": false,
         "singleQuote": true,
