@@ -1,9 +1,15 @@
 import Container from '@mui/material/Container'
+import FormControl from '@mui/material/FormControl/FormControl'
+import MenuItem from '@mui/material/MenuItem'
+import Select from '@mui/material/Select'
 import { config } from '@site.config'
 import Link from '@src/components/Link'
 import SeoHead from '@src/components/SeoHead'
+import { useColorModeContext } from '@src/contexts/ColorModeContext'
 
 const Home = () => {
+  const { colorMode, changeColorMode } = useColorModeContext()
+
   return (
     <>
       <SeoHead title={config.siteMeta.title} removeSiteNameFromTitle path="/" />
@@ -15,6 +21,17 @@ const Home = () => {
         >
           GitHub
         </Link>
+        <FormControl>
+          <Select
+            value={colorMode}
+            defaultValue="system"
+            onChange={(e) => changeColorMode(e.target.value)}
+          >
+            <MenuItem value="system">System</MenuItem>
+            <MenuItem value="light">Light</MenuItem>
+            <MenuItem value="dark">Dark</MenuItem>
+          </Select>
+        </FormControl>
       </Container>
     </>
   )
