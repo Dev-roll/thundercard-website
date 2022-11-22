@@ -1,5 +1,4 @@
 import Container from '@mui/material/Container'
-import FormControl from '@mui/material/FormControl/FormControl'
 import MenuItem from '@mui/material/MenuItem'
 import Select from '@mui/material/Select'
 import { config } from '@site.config'
@@ -21,17 +20,15 @@ const Home = () => {
         >
           GitHub
         </Link>
-        <FormControl>
-          <Select
-            value={colorMode}
-            defaultValue="system"
-            onChange={(e) => changeColorMode(e.target.value)}
-          >
-            <MenuItem value="system">System</MenuItem>
-            <MenuItem value="light">Light</MenuItem>
-            <MenuItem value="dark">Dark</MenuItem>
-          </Select>
-        </FormControl>
+        <Select
+          value={colorMode}
+          defaultValue="system"
+          onChange={(e) => changeColorMode(e.target.value)}
+        >
+          <MenuItem value="system">System</MenuItem>
+          <MenuItem value="light">Light</MenuItem>
+          <MenuItem value="dark">Dark</MenuItem>
+        </Select>
       </Container>
     </>
   )
