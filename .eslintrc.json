@@ -12,11 +12,12 @@
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
+    "react-hooks/exhaustive-deps": "off",
     "import/order": [2, { "alphabetize": { "order": "asc" } }],
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "all",
+        "trailingComma": "es5",
         "endOfLine": "lf",
         "semi": false,
         "singleQuote": true,
