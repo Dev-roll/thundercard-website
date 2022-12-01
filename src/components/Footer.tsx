@@ -27,7 +27,7 @@ const Footer = () => {
             利用規約
           </Link>
         </Box>
-        © Copyright {new Date().getFullYear()} Devroll. All rights reserved.
+        © {new Date().getFullYear()} Devroll.
       </Container>
     </footer>
   )
