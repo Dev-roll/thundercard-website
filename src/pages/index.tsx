@@ -2,11 +2,11 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import MenuItem from '@mui/material/MenuItem'
 import Select from '@mui/material/Select'
-import Image from 'next/image'
-import appstore from '@public/appstore.png'
-import googleplay from '@public/googleplay.png'
-import thumbnail from '@public/thumbnail.png'
-import web from '@public/web.png'
+// import Image from 'next/image'
+// import appstore from '@public/appstore.png'
+// import googleplay from '@public/googleplay.png'
+// import thumbnail from '@public/thumbnail.png'
+// import web from '@public/web.png'
 import { config } from '@site.config'
 import Link from '@src/components/Link'
 import SeoHead from '@src/components/SeoHead'
@@ -19,9 +19,9 @@ const Home = () => {
     <>
       <SeoHead title={config.siteMeta.title} removeSiteNameFromTitle path="/" />
       <Container maxWidth="md" sx={{ my: 4 }}>
-        <Image
+        <img
           alt="thumbnail"
-          src={thumbnail}
+          src="/thumbnail.png"
           placeholder="blur"
           sizes="100vw"
           style={{
@@ -44,8 +44,8 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image
-              src={googleplay}
+            <img
+              src="/googleplay.png"
               height="83"
               alt="Google Play で手に入れよう"
             />
@@ -55,14 +55,18 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={appstore} height="83" alt="Download on the App Store" />
+            <img
+              src="/appstore.png"
+              height="83"
+              alt="Download on the App Store"
+            />
           </Link>
           <Link
             href="https://thundercard-test.web.app/"
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={web} height="83" alt="Web" />
+            <img src="/web.png" height="83" alt="Web" />
           </Link>
           <p>Google Play および Google Play ロゴは、Google LLC の商標です。</p>
         </Box>
