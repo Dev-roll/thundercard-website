@@ -1,4 +1,6 @@
+import { CardContent } from '@mui/material'
 import Box from '@mui/material/Box'
+import Card from '@mui/material/Card'
 import Container from '@mui/material/Container'
 import MenuItem from '@mui/material/MenuItem'
 import Select from '@mui/material/Select'
@@ -70,6 +72,39 @@ const Home = () => {
           </Link>
           <p>Google Play および Google Play ロゴは、Google LLC の商標です。</p>
         </Box>
+        <Card
+          variant="outlined"
+          sx={{
+            display: 'flex',
+            gap: 1,
+            alignItems: 'center',
+            padding: 2,
+            my: 5,
+          }}
+        >
+          <span
+            style={{ fontSize: '56px' }}
+            className="material-symbols-outlined"
+          >
+            military_tech
+          </span>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+            <h3 style={{ margin: 0 }}>
+              エンジニアフレンドリーシティ福岡(EFC) AWARD 2022
+              プロダクト開発部門 受賞
+            </h3>
+            <span>
+              詳しくは
+              <Link
+                href="https://protopedia.net/event/39"
+                target="_blank"
+                rel="noreferrer"
+              >
+                こちら
+              </Link>
+            </span>
+          </Box>
+        </Card>
         <section>
           <h2>未来の名刺、全く新しいSNS。</h2>
           <p>
