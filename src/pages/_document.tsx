@@ -13,6 +13,10 @@ const Document = () => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <body>
