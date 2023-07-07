@@ -19,6 +19,6 @@ yarn dev
 
 ## Contributers
 
-- [@notchcoder](https://github.com/notchcoder)
+- [@chnotchy](https://github.com/chnotchy)
 - [@cardseditor](https://github.com/cardseditor)
 - [@keigomichi](https://github.com/keigomichi)
